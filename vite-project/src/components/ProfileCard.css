@@ -1,0 +1,217 @@
+.profile-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.profile-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-basic-info {
+    flex: 1;
+}
+
+.profile-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.25rem;
+}
+
+.profile-username {
+    color: #718096;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.profile-company {
+    color: #4a5568;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.expand-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.expand-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.profile-preview {
+    margin-bottom: 1rem;
+}
+
+.company-catchphrase {
+    font-style: italic;
+    color: #4a5568;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+.location-icon {
+    font-size: 1rem;
+}
+
+.profile-details {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 1rem;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.detail-section {
+    margin-bottom: 1.5rem;
+}
+
+.detail-section:last-child {
+    margin-bottom: 0;
+}
+
+.detail-section h4 {
+    color: #2d3748;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.25rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.contact-icon {
+    font-size: 1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.contact-item a {
+    color: #4299e1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-item a:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+}
+
+.address-info p {
+    color: #4a5568;
+    margin-bottom: 0.25rem;
+    line-height: 1.4;
+}
+
+.geo-coordinates {
+    margin-top: 0.5rem;
+}
+
+.geo-coordinates small {
+    color: #718096;
+    font-size: 0.8rem;
+}
+
+.company-info p {
+    color: #4a5568;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.company-info strong {
+    color: #2d3748;
+}
+
+.expanded {
+    background: rgba(255, 255, 255, 0.98);
+}
+
+@media (max-width: 768px) {
+    .profile-card {
+        padding: 1rem;
+    }
+
+    .profile-header {
+        gap: 0.75rem;
+    }
+
+    .avatar {
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .profile-name {
+        font-size: 1.1rem;
+    }
+}
